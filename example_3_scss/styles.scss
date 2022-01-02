@@ -26,20 +26,18 @@ body {
 
 .menu {
     display: flex;
-}
-
-.menu__item {
-    text-decoration: none;
-    margin-right: 20px;
-    font-size: 18px;
-    color: #282828;
-}
-.menu__item:hover {
-  color: var(--dark-blue);
-}
-
-.menu__item_active {
-    color: var(--theme-blue);
+    &__item {
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 18px;
+        color: #282828;
+    }
+    &__item:hover {
+        color: var(--dark-blue);
+    }
+    &__item_active {
+        color: var(--theme-blue);
+    }
 }
 
 .introduction {
@@ -52,29 +50,29 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
-.introduction__title {
-    font-weight: 800;
-    font-size: 4em;
-    color: white;
-}
+    &__title {
+        font-weight: 800;
+        font-size: 4em;
+        color: white;
+    }
 
-.introduction__motto {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    color: white;
+    &__motto {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        color: white;
+    }
 }
 
 .buttons-container {
     display: flex;
     justify-content: space-between;
     width: fit-content;
-}
 
-.buttons-container__second-button-wrapper {
-    margin-left: 20px;
+    &__second-button-wrapper {
+        margin-left: 20px;
+    }
 }
 
 .button {
@@ -83,38 +81,37 @@ body {
     text-transform: uppercase;
     font-size: 1em;
     font-weight: 600;
-}
 
-.button_blue {
-    color: #fff;
-    background: var(--theme-blue);
-    border: 4px solid var(--theme-blue);
-}
+    &_blue {
+        color: #fff;
+        background: var(--theme-blue);
+        border: 4px solid var(--theme-blue);
+    }
 
-.button_secondary_white {
-    color: #fff;
-    background: transparent;
-    border: 4px solid #fff;
-}
+    &_secondary_white {
+        color: #fff;
+        background: transparent;
+        border: 4px solid #fff;
+    }
 
-.button_secondary_blue {
-    color: var(--theme-blue);
-    background: transparent;
-    border: 4px solid var(--theme-blue);
+    &_secondary_blue {
+        color: var(--theme-blue);
+        background: transparent;
+        border: 4px solid var(--theme-blue);
+    }
 }
-
 .charity {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.charity__title {
-    color: #282828;
-    font-weight: 600;
-    font-size: 2em;
-    margin-top: 20px;
+    &__title {
+        color: #282828;
+        font-weight: 600;
+        font-size: 2em;
+        margin-top: 20px;
+    }
 }
 
 .card-container {
@@ -130,17 +127,17 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
 
-.card__image {
-    width: 400px;
-    max-width: 400px;
-    object-fit: cover;
-    height: 400px
-}
+    &__image {
+        width: 400px;
+        max-width: 400px;
+        object-fit: cover;
+        height: 400px
+    }
 
-.card__text-wrapper {
-    margin: 10px;
+    &__text-wrapper {
+        margin: 10px;
+    }
 }
 
 .common-text {
@@ -149,3 +146,4 @@ body {
     font-size: 18px;
     text-align: center;
 }
+
